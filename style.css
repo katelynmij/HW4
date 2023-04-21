@@ -1,0 +1,122 @@
+.set {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    text-align: center;
+    background-color: azure;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 8px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    width: 80px;
+    height: 30px;
+    background-color: pink;
+    margin: 1px;
+    padding: 4px;
+    transition: 0.3s;
+}
+
+li:hover {
+    background-color: white;
+}
+
+#MyTitle {
+    grid-area: title;
+}
+
+#ADiv {
+    grid-area: adiv;
+}
+
+#Bdiv {
+    grid-area: bdiv;
+}
+
+#Cdiv {
+    grid-area: cdiv;
+}
+
+#Ddiv {
+    grid-area: ddiv;
+}
+
+#MyFoot {
+    grid-area: foot;
+}
+
+@media only screen and (min-width: 768px) {
+    #Adiv {
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ddd;
+    }
+    #Cdiv {
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ddd;
+    }
+
+    #Ddiv {
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ddd;
+    }
+
+    #Bdiv {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ddd;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #myTitle, #MyFoot, #Adiv, #Bdiv, #Cdiv, #Ddiv {
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border: 1px #ddd;
+        display: block;
+        clear: both;
+        float: none;
+        width: auto;
+    }
+
+    #Adiv, #Bdiv, #Cdiv, #Ddiv {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    /*I give up im so sorry*/
+}
